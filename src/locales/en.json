@@ -1,0 +1,106 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "loans": "Loans",
+    "deposits": "Deposits",
+    "board": "Board",
+    "gallery": "Gallery",
+    "downloads": "Downloads",
+    "faq": "FAQ",
+    "contact": "Contact"
+  },
+  "hero": {
+    "welcome": "Welcome to",
+    "title": "Manganam Service Co-operative Bank Ltd.",
+    "subtitle": "Your Trusted Financial Partner Since 2009",
+    "cta1": "Open Account",
+    "cta2": "Apply for Loan"
+  },
+  "about": {
+    "title": "About Us",
+    "history": "Our History",
+    "mission": "Our Mission",
+    "vision": "Our Vision",
+    "community": "Community Service"
+  },
+  "services": {
+    "title": "Our Services",
+    "savings": "Savings Account",
+    "fd": "Fixed Deposit",
+    "rd": "Recurring Deposit",
+    "goldLoan": "Gold Loan",
+    "personalLoan": "Personal Loan",
+    "housingLoan": "Housing Loan",
+    "agriculturalLoan": "Agricultural Loan",
+    "businessLoan": "Business Loan",
+    "atm": "ATM Facility",
+    "onlineBanking": "Online Banking Assistance"
+  },
+  "loans": {
+    "title": "Loan Schemes",
+    "interestRate": "Interest Rate",
+    "eligibility": "Eligibility",
+    "documents": "Documents Required",
+    "benefits": "Benefits",
+    "minAmount": "Minimum Amount",
+    "maxAmount": "Maximum Amount",
+    "tenure": "Tenure",
+    "apply": "Apply Now"
+  },
+  "deposits": {
+    "title": "Deposit Schemes",
+    "interestRate": "Interest Rate",
+    "features": "Features",
+    "openAccount": "Open Account"
+  },
+  "emi": {
+    "title": "EMI Calculator",
+    "loanAmount": "Loan Amount",
+    "interestRate": "Interest Rate (% per annum)",
+    "tenure": "Loan Tenure (Months)",
+    "calculate": "Calculate EMI",
+    "monthlyEMI": "Monthly EMI",
+    "totalInterest": "Total Interest",
+    "totalPayment": "Total Repayment"
+  },
+  "board": {
+    "title": "Board of Directors",
+    "designation": "Designation",
+    "phone": "Phone"
+  },
+  "welfare": {
+    "title": "Welfare Schemes",
+    "educational": "Educational Assistance",
+    "medical": "Medical Assistance",
+    "marriage": "Marriage Assistance",
+    "death": "Death Assistance",
+    "emergency": "Emergency Assistance"
+  },
+  "medicalStore": {
+    "title": "Medical Store Offer",
+    "subtitle": "Exclusive Member Discounts",
+    "discount": "15% - 50% OFF",
+    "description": "Special discounts for bank members at partner medical stores"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "address": "Address",
+    "phone": "Phone",
+    "email": "Email",
+    "workingHours": "Working Hours",
+    "send": "Send Message",
+    "name": "Full Name",
+    "emailPlaceholder": "Email Address",
+    "subject": "Subject",
+    "message": "Message",
+    "call": "Call Now",
+    "whatsapp": "WhatsApp"
+  },
+  "footer": {
+    "quickLinks": "Quick Links",
+    "workingHours": "Working Hours",
+    "copyright": "© 2024 Manganam Service Co-operative Bank Ltd. All rights reserved."
+  }
+}
