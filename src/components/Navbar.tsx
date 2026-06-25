@@ -8,7 +8,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const { language, setLanguage, t } = useLanguage();
+  const { t } = useLanguage();
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 10);
@@ -40,8 +40,8 @@ export function Navbar() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-14 sm:h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2 group">
-            <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full overflow-hidden bg-white p-0.5 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6">
+          <Link href="/" className="flex items-center space-x-1.5 sm:space-x-2 group min-w-0">
+            <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full overflow-hidden bg-white p-0.5 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6 flex-shrink-0">
               <Image
                 src="/manganam.svg"
                 alt="Manganam Bank Logo"
@@ -51,12 +51,12 @@ export function Navbar() {
                 priority
               />
             </div>
-            <div className="hidden sm:block">
-              <div className="text-white font-bold text-xs sm:text-sm leading-tight">
-                {language === "ml" ? "മംഗലം സർവീസ്" : "Manganam Service"}
+            <div className="min-w-0">
+              <div className="text-white font-bold text-[11px] sm:text-sm leading-tight truncate">
+                Manganam Service
               </div>
-              <div className="text-gold text-[10px] sm:text-xs leading-tight">
-                {language === "ml" ? "കോ-ഓപ്പറേറ്റീവ് ബാങ്ക്" : "Co-operative Bank Ltd."}
+              <div className="text-gold text-[9px] sm:text-xs leading-tight truncate">
+                Co-operative Bank Ltd.
               </div>
             </div>
           </Link>
@@ -72,24 +72,10 @@ export function Navbar() {
                 {item.label}
               </Link>
             ))}
-
-            {/* Language Toggle */}
-            <button
-              onClick={() => setLanguage(language === "en" ? "ml" : "en")}
-              className="ml-4 bg-gold text-primary px-3 py-1.5 rounded-full text-sm font-semibold hover:bg-gold-light hover:shadow-md transition-all duration-300 hover:scale-105"
-            >
-              {language === "en" ? "മലയാളം" : "English"}
-            </button>
           </div>
 
           {/* Mobile Menu Button */}
           <div className="lg:hidden flex items-center space-x-2">
-            <button
-              onClick={() => setLanguage(language === "en" ? "ml" : "en")}
-              className="bg-gold text-primary px-2.5 py-1 rounded-full text-xs font-semibold transition-all duration-300 hover:scale-105"
-            >
-              {language === "en" ? "മല" : "Eng"}
-            </button>
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="text-white hover:text-gold p-2 transition-colors duration-300"

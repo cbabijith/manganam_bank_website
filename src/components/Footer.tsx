@@ -2,24 +2,21 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useLanguage } from "@/contexts/LanguageContext";
 
 export function Footer() {
-  const { language } = useLanguage();
-
   const quickLinks = [
-    { href: "/about", label: language === "ml" ? "ഞങ്ങളെക്കുറിച്ച്" : "About Us" },
-    { href: "/services", label: language === "ml" ? "സേവനങ്ങൾ" : "Services" },
-    { href: "/loans", label: language === "ml" ? "വായ്പകൾ" : "Loans" },
-    { href: "/deposits", label: language === "ml" ? "നിക്ഷേപങ്ങൾ" : "Deposits" },
-    { href: "/contact", label: language === "ml" ? "ബന്ധപ്പെടുക" : "Contact" },
+    { href: "/about", label: "About Us" },
+    { href: "/services", label: "Services" },
+    { href: "/loans", label: "Loans" },
+    { href: "/deposits", label: "Deposits" },
+    { href: "/contact", label: "Contact" },
   ];
 
   const otherLinks = [
-    { href: "/board", label: language === "ml" ? "ഡയറക്ടർ ബോർഡ്" : "Board" },
-    { href: "/gallery", label: language === "ml" ? "ഗാലറി" : "Gallery" },
-    { href: "/downloads", label: language === "ml" ? "ഡൗൺലോഡുകൾ" : "Downloads" },
-    { href: "/faq", label: language === "ml" ? "ചോദ്യങ്ങൾ" : "FAQ" },
+    { href: "/board", label: "Board" },
+    { href: "/gallery", label: "Gallery" },
+    { href: "/downloads", label: "Downloads" },
+    { href: "/faq", label: "FAQ" },
     { href: "/calculators/emi", label: "EMI Calculator" },
   ];
 
@@ -40,21 +37,19 @@ export function Footer() {
                 />
               </div>
               <div>
-                <div className="font-bold text-sm leading-tight">{language === "ml" ? "മംഗലം സർവീസ്" : "Manganam Service"}</div>
-                <div className="text-gold text-xs leading-tight">{language === "ml" ? "കോ-ഓപ്പറേറ്റീവ് ബാങ്ക് ലിമിറ്റഡ്" : "Co-operative Bank Ltd."}</div>
+                <div className="font-bold text-sm leading-tight">Manganam Service</div>
+                <div className="text-gold text-xs leading-tight">Co-operative Bank Ltd.</div>
               </div>
             </div>
             <p className="text-sm text-white/70 leading-relaxed mb-4">
-              {language === "ml"
-                ? "2009 മുതൽ വിശ്വസ്തതയും സുരക്ഷയും സ്ഥാപിക്കുന്നു. നിങ്ങളുടെ സാമ്പത്തിക പങ്കാളി."
-                : "Building trust and securing futures since 2009. Your trusted financial partner."}
+              Building trust and securing futures since 2009. Your trusted financial partner.
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
             <h3 className="font-semibold text-gold mb-4 text-sm sm:text-base">
-              {language === "ml" ? "ദ്രുത ലിങ്കുകൾ" : "Quick Links"}
+              Quick Links
             </h3>
             <ul className="space-y-2">
               {quickLinks.map((link) => (
@@ -73,7 +68,7 @@ export function Footer() {
           {/* Other Links */}
           <div>
             <h3 className="font-semibold text-gold mb-4 text-sm sm:text-base">
-              {language === "ml" ? "മറ്റ് ലിങ്കുകൾ" : "Other Links"}
+              Other Links
             </h3>
             <ul className="space-y-2">
               {otherLinks.map((link) => (
@@ -92,7 +87,7 @@ export function Footer() {
           {/* Contact */}
           <div>
             <h3 className="font-semibold text-gold mb-4 text-sm sm:text-base">
-              {language === "ml" ? "ബന്ധപ്പെടുക" : "Contact Us"}
+              Contact Us
             </h3>
             <ul className="space-y-3 text-sm text-white/70">
               <li className="flex items-start gap-2">
@@ -113,7 +108,18 @@ export function Footer() {
 
         <div className="border-t border-white/10 mt-8 sm:mt-10 pt-6 text-center">
           <p className="text-xs sm:text-sm text-white/60">
-            © {new Date().getFullYear()} Manganam Service Co-operative Bank Ltd. {language === "ml" ? "എല്ലാ അവകാശങ്ങളും സംരക്ഷിക്കപ്പെട്ടിരിക്കുന്നു." : "All rights reserved."}
+            © {new Date().getFullYear()} Manganam Service Co-operative Bank Ltd. All rights reserved.
+          </p>
+          <p className="text-xs sm:text-sm text-white/60 mt-2">
+            Made by{" "}
+            <a
+              href="https://abijithcb.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gold hover:text-gold-light transition-colors duration-300 font-semibold"
+            >
+              abijithcb.com
+            </a>
           </p>
         </div>
       </div>
