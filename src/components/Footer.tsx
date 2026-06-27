@@ -42,7 +42,7 @@ export function Footer() {
               </div>
             </div>
             <p className="text-sm text-white/70 leading-relaxed mb-4">
-              Building trust and securing futures since 2009. Your trusted financial partner.
+              Building trust and securing futures since 1920. Your trusted financial partner.
             </p>
           </div>
 

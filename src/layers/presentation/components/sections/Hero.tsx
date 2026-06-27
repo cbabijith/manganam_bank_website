@@ -36,7 +36,7 @@ export function Hero() {
           <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-1.5 mb-6 animate-fade-in-down">
             <span className="w-2 h-2 bg-gold rounded-full animate-pulse" />
             <span className="text-xs sm:text-sm font-medium text-gold">
-              {language === "ml" ? "2009 മുതൽ വിശ്വസ്തതയുടെ പങ്കാളി" : "Trusted Partner Since 2009"}
+              {language === "ml" ? "1920 മുതൽ വിശ്വസ്തതയുടെ പങ്കാളി" : "Trusted Partner Since 1920"}
             </span>
           </div>
 

@@ -20,8 +20,8 @@ export function AboutContent() {
               </h1>
               <p className="text-xl text-gray-600">
                 {language === "ml"
-                  ? "2009 മുതൽ വിശ്വസ്തതയും സുരക്ഷയും സ്ഥാപിക്കുന്നു"
-                  : "Building trust and securing futures since 2009"}
+                  ? "1920 മുതൽ വിശ്വസ്തതയും സുരക്ഷയും സ്ഥാപിക്കുന്നു"
+                  : "Building trust and securing futures since 1920"}
               </p>
             </div>
 
